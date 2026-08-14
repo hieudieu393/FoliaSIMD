@@ -76,6 +76,7 @@ subprojects {
         options.encoding = Charsets.UTF_8.name()
         options.release = 25
         options.isFork = true
+        options.compilerArgs.add("--add-modules=jdk.incubator.vector")
     }
     tasks.withType<Javadoc>().configureEach  {
         options.encoding = Charsets.UTF_8.name()
