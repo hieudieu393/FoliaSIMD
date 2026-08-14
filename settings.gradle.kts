@@ -10,7 +10,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
 }
 
-rootProject.name = "folia"
+rootProject.name = "FoliaSIMD"
 
 include("folia-api")
 include("folia-server")
