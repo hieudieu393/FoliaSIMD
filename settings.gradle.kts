@@ -15,10 +15,10 @@ if (!file(".git").exists()) {
     val errorText = """
         
         =====================[ ERROR ]=====================
-         The Folia project directory is not a properly cloned Git repository.
+         The FoliaSIMD project directory is not a properly cloned Git repository.
          
-         In order to build Folia from source you must clone
-         the Folia repository using Git, not download a code
+         In order to build FoliaSIMD from source you must clone
+         the FoliaSIMD repository using Git, not download a code
          zip from GitHub.
          
          See https://github.com/PaperMC/Paper/blob/master/CONTRIBUTING.md
@@ -28,7 +28,7 @@ if (!file(".git").exists()) {
     error(errorText)
 }
 
-rootProject.name = "folia"
+rootProject.name = "FoliaSIMD"
 
 for (name in listOf("Folia-API", "Folia-Server")) {
     val projName = name.lowercase(Locale.ENGLISH)
