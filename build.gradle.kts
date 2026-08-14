@@ -36,6 +36,7 @@ subprojects {
     tasks.withType<JavaCompile> {
         options.encoding = Charsets.UTF_8.name()
         options.release.set(21)
+        options.compilerArgs.add("--add-modules=jdk.incubator.vector")
     }
     tasks.withType<Javadoc> {
         options.encoding = Charsets.UTF_8.name()
@@ -47,6 +48,12 @@ subprojects {
     repositories {
         mavenCentral()
         maven(paperMavenPublicUrl)
+    }
+}
+
+project(":folia-api") {
+    sourceSets.main {
+        java.srcDir(rootProject.file("foliasimd-api/src/main/java"))
     }
 }
 
